@@ -4,7 +4,7 @@ import { Container, Row, Col, FormInput, Button } from 'shards-react';
 import { WebSocketLink } from '@apollo/client/link/ws';
 
 const link = new WebSocketLink({
-    uri: `ws://localhost:4000`,
+    uri: `ws://graphql-server-chat-app.herokuapp.com/`,
     options: {
         reconnect: true
     },
@@ -13,7 +13,7 @@ const link = new WebSocketLink({
 
 const client = new ApolloClient({
     link,
-    uri: 'http://localhost:4000/',
+    uri: 'https://graphql-server-chat-app.herokuapp.com/',
     cache: new InMemoryCache(),
 });
 
