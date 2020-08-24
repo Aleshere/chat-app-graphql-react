@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -b chat-app-graphql-react -d build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "start": "webpack-dev-server --open --mode development",
